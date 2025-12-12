@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiki AI Vibrant Digital Agency</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import (Inter) and general styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc; /* Light background for contrast */
+            color: #1e293b; /* Dark text */
+        }
+        /* Updated Gradient: Teal to Pink (from the vibrant color palette) */
+        .vibrant-gradient {
+            background: linear-gradient(90deg, #06b6d4 0%, #ec4899 100%); 
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        /* Mobile-first card styling */
+        .contact-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(236, 72, 153, 0.1); /* Shadow using primary Pink */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation (Mobile-friendly) -->
+    <nav class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            
+            <!-- Logo: CEO Photo + Company Name -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="1000371950.jpg" alt="Kaiki AI Logo | Cornelius Mokaba" 
+                     class="w-8 h-8 rounded-full object-cover shadow-md ring-2 ring-pink-500">
+                <span class="text-xl font-extrabold text-gray-800">Kaiki AI</span>
+            </a>
+
+            <!-- Simple Nav Links (Scroll to section) -->
+            <div class="flex space-x-4">
+                <a href="#services" class="text-gray-600 hover:text-teal-500 transition duration-150 ease-in-out hidden sm:block">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-teal-500 transition duration-150 ease-in-out hidden sm:block">About</a>
+                <!-- CTA button uses the new pink color -->
+                <a href="#contact" class="px-3 py-1 bg-pink-500 text-white rounded-lg hover:bg-pink-600 btn-primary text-sm">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-16 md:py-24 vibrant-gradient text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-4 leading-tight">
+                Ignite Your Digital Presence with AI
+            </h1>
+            <p class="text-lg sm:text-xl mb-8 opacity-90">
+                We blend human creativity with cutting-edge AI to deliver vibrant, data-driven digital solutions.
+            </p>
+            <!-- CTA button uses the new pink color for text -->
+            <a href="#contact" class="inline-block px-8 py-3 text-lg font-semibold bg-white text-pink-600 rounded-xl btn-primary shadow-lg hover:bg-gray-100">
+                Start Your Project Today
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-6">Our Comprehensive Service Ecosystem</h2>
+            
+            <!-- New Introductory Text -->
+            <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+                Business has evolved and AI is here already. Work smart and let our chat bots handle all the inquiries about your business for you. We make tailor-made chat bots to suit your business needs. 
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1: Custom AI Chatbots & Web/App Development -->
+                <div class="p-6 border border-teal-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <!-- Icon color updated to Teal -->
+                    <svg class="w-10 h-10 text-teal-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.699A7.94 7.94 0 0112 4c4.418 0 8 3.582 8 8z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-3">AI & Digital Development</h3>
+                    <p class="text-gray-600 mb-4">Focus on custom AI systems, immediate support, and seamless digital infrastructure.</p>
+                    <ul class="text-sm space-y-2 text-gray-600 list-disc pl-5">
+                        <li>Tailor-made Chatbot Implementation</li>
+                        <li>Websites and Apps for your business</li>
+                        <li>Product Launch Strategy & Execution</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 2: AI-Powered Media & Marketing -->
+                <div class="p-6 border border-pink-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <!-- Icon color updated to Pink -->
+                    <svg class="w-10 h-10 text-pink-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-12 5h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-3">Vibrant AI Content Creation</h3>
+                    <p class="text-gray-600 mb-4">Leveraging generative AI for ultra-fast, high-impact marketing assets across all channels.</p>
+                    <ul class="text-sm space-y-2 text-gray-600 list-disc pl-5">
+                        <li>AI Video Advertisement Production</li>
+                        <li>Lighting Fast AI Poster packs</li>
+                        <li>AI Traditional Adverts for social media</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 3: Business Foundations & Research -->
+                <div class="p-6 border border-teal-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <!-- Icon color updated to Teal -->
+                    <svg class="w-10 h-10 text-teal-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.204 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.8 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.8 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.2 18 16.5 18s-3.332.477-4.5 1.253"></path></svg>
+                    <h3 class="text-xl font-semibold mb-3">Strategic Planning & Legal Setup</h3>
+                    <p class="text-gray-600 mb-4">Get the deep insights and official documentation needed for a solid, compliant start.</p>
+                    <ul class="text-sm space-y-2 text-gray-600 list-disc pl-5">
+                        <li>Deep Research Reports on any subject, sector or niche.</li>
+                        <li>Business Plan formulation in relation to your sector or niche.</li>
+                        <li>Comprehensive Company Registration Package:
+                            <span class="block ml-4 mt-1 text-xs text-gray-500">
+                                (Business Bank Account, Logo, BBBE Certificate, BO Certificate, Share Certificate, Tax Compliant Certificate, Business Plan)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Meet Our Visionary Leadership</h2>
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                <!-- CEO Profile Card -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-2xl mb-8 md:mb-0">
+                    <!-- CEO Image is retained from the previous version -->
+                    <img src="1000371950.jpg" alt="Cornelius Mologeng Mokaba, CEO" 
+                         class="w-48 h-48 object-cover rounded-full mb-4 ring-4 ring-pink-500/50 shadow-xl">
+                    <h3 class="text-2xl font-bold text-gray-900">Cornelius Mologeng Mokaba</h3>
+                    <!-- Text color updated to Pink -->
+                    <p class="text-pink-600 font-semibold mb-4">CEO</p>
+                    <p class="text-sm text-gray-500 text-center max-w-xs">Driving the integration of human strategy and advanced AI for unparalleled digital transformation.</p>
+                </div>
+                <!-- Company Description -->
+                <div class="text-lg text-gray-700 space-y-4">
+                    <p>Kaiki AI was founded on the principle that the best digital solutions are a perfect synergy of human insight and artificial intelligence efficiency.</p>
+                    <p>Our team of expert designers, developers, and strategists utilizes proprietary AI tools to accelerate workflows, eliminate tedious tasks, and focus on the creative problem-solving that truly drives success for our clients worldwide.</p>
+                    <!-- Text color updated to Pink -->
+                    <p class="font-semibold text-pink-600">We don't just build websites—we craft digital experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Formspree Integration -->
+    <section id="contact" class="py-16 vibrant-gradient">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Ready to Discuss Your Project?</h2>
+            <p class="text-center text-white mb-10 opacity-90">Let's connect and define your next digital breakthrough.</p>
+
+            <div class="contact-card">
+                <form id="contactForm" action="https://formspree.io/f/xvgedard" method="POST" class="space-y-6">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <!-- Focus ring color updated to Pink -->
+                        <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500 transition duration-150" placeholder="John Doe">
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <!-- Focus ring color updated to Pink -->
+                        <input type="email" name="_replyto" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500 transition duration-150" placeholder="you@company.com">
+                    </div>
+
+                    <!-- Message Input -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell Us About Your Project</label>
+                        <!-- Focus ring color updated to Pink -->
+                        <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500 transition duration-150" placeholder="I need a new e-commerce website with AI integration..."></textarea>
+                    </div>
+
+                    <!-- Submission Button color updated to Pink -->
+                    <button type="submit" id="submitButton" class="w-full px-4 py-3 bg-pink-600 text-white font-semibold rounded-xl btn-primary hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
+                        Send Message
+                    </button>
+                </form>
+
+                <!-- Message Box for Feedback (Text color updated to Pink) -->
+                <div id="formStatus" class="mt-4 text-center font-medium min-h-[20px]">
+                    <!-- Submission status message will appear here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; <span id="currentYear"></span> Kaiki AI. All rights reserved. | Crafted with AI and Passion.
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // ------------------------------------------------------------------
+        // Formspree Submission Handling (AJAX)
+        // ------------------------------------------------------------------
+        const form = document.getElementById('contactForm');
+        const statusElement = document.getElementById('formStatus');
+        const submitButton = document.getElementById('submitButton');
+
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault(); // Prevent default browser submission
+
+            // Clear previous status
+            statusElement.textContent = 'Sending...';
+            // Loading text color updated to Pink
+            statusElement.className = 'mt-4 text-center font-medium text-pink-600';
+            submitButton.disabled = true;
+
+            const data = new FormData(event.target);
+            
+            try {
+                const response = await fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json' // Crucial for Formspree to return a JSON response
+                    }
+                });
+
+                if (response.ok) {
+                    // Success case
+                    statusElement.textContent = 'Thank you! Your message has been sent successfully.';
+                    statusElement.className = 'mt-4 text-center font-semibold text-green-600';
+                    form.reset(); // Clear the form fields
+                } else {
+                    // Handle non-200 responses (e.g., validation errors)
+                    const result = await response.json();
+                    let errorMessage = 'Oops! There was an issue submitting your form.';
+                    
+                    if (result.errors) {
+                        errorMessage += ' Please check your inputs.';
+                    } else if (result.error) {
+                         // Formspree error
+                        errorMessage = result.error;
+                    }
+                    
+                    statusElement.textContent = errorMessage;
+                    statusElement.className = 'mt-4 text-center font-semibold text-red-600';
+                }
+            } catch (error) {
+                // Handle network errors
+                console.error("Form submission error:", error);
+                statusElement.textContent = 'Network error. Please try again later.';
+                statusElement.className = 'mt-4 text-center font-semibold text-red-600';
+            } finally {
+                // Re-enable the button
+                submitButton.disabled = false;
+            }
+        });
+    </script>
+
+</body>
+</html>
+
